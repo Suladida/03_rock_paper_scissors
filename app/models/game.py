@@ -3,10 +3,9 @@ class Game:
         self.player1 = player1
         self.player2 = player2
         self.players = []
-        # self.player1 = Player("Lobster Queen", "Claw")
-        # self.player2 = Player("Lobster King", "Pinch")
-        # self.players = [player1, player2]
 
+    def add_players(self, player):
+        self.players.append(player)
 
     def check_players(self):
-        return "HEY"
+        return len(self.players)

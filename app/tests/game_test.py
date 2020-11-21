@@ -7,8 +7,11 @@ class TestGame(unittest.TestCase):
     def setUp(self):
         self.player1 = Player("Lobster1", "Choice1")
         self.player2 = Player("Lobster2", "Choice2")
-        self.players = [self.player1, self.player2]
+        self.game = Game("Player1", "Player2")
+        
 
-    @unittest.skip("Delete this line to run the test")
-    def test_check_players(self):
-        self.assertEqual(2, self.players.check_players())
+    # @unittest.skip("Delete this line to run the test")
+    def test_add_players(self):
+        self.game.add_players(self.player1)
+        self.game.add_players(self.player2)
+        self.assertEqual(2, self.game.check_players())
