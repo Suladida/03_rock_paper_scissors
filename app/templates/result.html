@@ -3,14 +3,12 @@
 {% block content %}
     <h1>Rock, Paper, Scissors:</h1>
     <p>P.s. Have you heard about our Lorb and saviour? 🦞</p>
-    {% for player in players %}
-      <div>
-      <p>
-      {{ player.name }} chose {{ player.choice }}
-      </p>
-    </div>
-{% endfor %}
-The winner is: 
+<p>{{player1.name}} chose {{player1.choice}}</p>
+<p>{{player2.name}} chose {{player2.choice}}</p>
+<p>The winner is: {{winner}}</p>
+
+<p><a href="/">Play Again</a></p>
+ 
 
 {% endblock content %}
 <!-- 

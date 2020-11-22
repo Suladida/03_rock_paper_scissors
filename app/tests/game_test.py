@@ -5,8 +5,8 @@ from app.models.player import Player
 
 class TestGame(unittest.TestCase):
     def setUp(self):
-        self.player1 = Player("Lobster1", "Choice1")
-        self.player2 = Player("Lobster2", "Choice2")
+        self.player1 = Player("Lobster Queen", "Rock")
+        self.player2 = Player("Lobster King", "Scissors")
         self.game = Game(self.player1, self.player2)
         
 
@@ -17,5 +17,5 @@ class TestGame(unittest.TestCase):
         self.assertEqual(2, self.game.check_players())
 
     def test_play_game(self):
-        self.assertEqual("Draw!", self.game.play_game(self.player1, self.player2))
+        self.assertEqual(self.player1.name, self.game.play_game(self.player1, self.player2))
 
