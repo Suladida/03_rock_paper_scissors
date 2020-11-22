@@ -1,13 +1,15 @@
 <html>
     <head>
-      <title>{{ title }} - Play Game</title>
+      <title>{{ title }}</title>
       <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}"/>
     </head>
+    <header>
+      <a href="/">Home</a> 
+    </header>
     <body>
-        <ul>
-          <li><a href="/">Home</a></li>
-        </ul>
-        <hr>
+      <h1>Rock, Paper, Scissors Game</h1>
+      <hr>
+
         {% block content %}
 
         {% endblock %}

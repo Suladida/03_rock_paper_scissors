@@ -1,14 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Rock, Paper, Scissors:</h1>
-<p>⭐️ <b>{{player1.name}}</b> chose <b>{{player1.choice}}</b></p>
-<p>⭐️ <b>{{player2.name}}</b> chose <b>{{player2.choice}}</b></p>
-<p>The winner is:</p> <h3><b>{{winner}}</b></h3>
+<center>
+<h2>RESULT</h2>
+<p>✨ <b>{{player1.name}}</b> chose <b>{{player1.choice}}</b> ✨</p>
+<p>✨ <b>{{player2.name}}</b> chose <b>{{player2.choice}}</b> ✨</p>
+<p>The winner is:</p><h3><b>⭐️⭐️⭐️ {{winner}} ⭐️⭐️⭐️</b></h3>
 <img src="/static/img/good_game.gif" width="250px"/>
 <p><a href="/">Play Again</a></p>
- 
-
+<button onClick="window.location.reload();">Replay Hand</button>
+</center>
 {% endblock content %}
 <!-- 
 

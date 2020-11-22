@@ -1,12 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Rock, Paper, Scissors Game:</h1>
-    <p>Instructions: </p>
+    <p><b>Instructions:</b> </p>
     <p>Enter your name, choose your hand and press "Play".</p>
     <form action="/result" method="post">
     <label for="name">Name:</label>
-    <input type="text" name="name" id="name">
+    <input type="text" name="name" required="required" id="name">
     <label for="choice">Choice:</label>
     <select id="choice" name="choice" id="choice">
       <option value="Rock">Rock</option>
