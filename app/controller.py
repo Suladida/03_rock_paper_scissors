@@ -19,14 +19,3 @@ def game_result():
     current_game = Game(player1, player2)
     winner = current_game.play_game(player1, player2)
     return render_template("result.html", title="Result", player1=player1, player2=player2, winner=winner)
-    
-
-# @app.route('/result', methods=["POST"])
-# def game_result():
-#     name = request.form["name"]
-#     choice = request.form["choice"]
-#     player1 = Player("Lobsteretta", "Rock")
-#     player2 = Player(name, choice)
-#     current_game = Game(player1, player2)
-#     winner = current_game.play_game(player1, player2)
-#     return render_template("result.html", title="Result", player1=player1, player2=player2, winner=winner)
