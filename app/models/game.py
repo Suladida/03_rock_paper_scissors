@@ -9,3 +9,9 @@ class Game:
 
     def check_players(self):
         return len(self.players)
+
+    def play_game(self, player1, player2):
+        if player1.choice == "Rock" and player2.choice == "Paper":
+            return "Player 1 Wins!"
+        if player1.choice == player2.choice:
+            return "Draw!"
